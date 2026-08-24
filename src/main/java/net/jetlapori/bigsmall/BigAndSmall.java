@@ -2,6 +2,7 @@ package net.jetlapori.bigsmall;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.jetlapori.bigsmall.item.ModItems;
 import net.minecraft.util.Identifier;
 
 import org.slf4j.Logger;
@@ -13,9 +14,7 @@ public class BigAndSmall implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-	}
-
-	public static Identifier id(String path) {
-		return Identifier.of(MOD_ID, path);
+        ModItems.registerModItems();
 	}
 }
+
