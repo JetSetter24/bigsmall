@@ -2,6 +2,7 @@ package net.jetlapori.bigsmall;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.jetlapori.bigsmall.block.ModBlocks;
 import net.jetlapori.bigsmall.item.ModItems;
 import net.minecraft.util.Identifier;
 
@@ -15,6 +16,7 @@ public class BigAndSmall implements ModInitializer {
 	@Override
 	public void onInitialize() {
         ModItems.registerModItems();
+        ModBlocks.registerModBlocks();
 	}
 }
 
