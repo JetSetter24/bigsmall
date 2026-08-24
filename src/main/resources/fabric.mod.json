@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "bigsmall",
+	"version": "${version}",
+	"name": "Big and Small",
+	"description": "Adding 3 stages to every pokemon and more!",
+	"authors": [
+		"Jet", "Lapori"
+	],
+	"contact": {
+		"homepage": "https://jetlapori.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/bigsmall/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.jetlapori.bigsmall.BigAndSmall"
+		],
+		"fabric-datagen": [
+			"net.jetlapori.bigsmall.BigAndSmallDataGenerator"
+		],
+        "client": [
+          "net.jetlapori.bigsmall.BigAndSmallClient"
+        ]
+	},
+	"mixins": [
+		"bigsmall.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
