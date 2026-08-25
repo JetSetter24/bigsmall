@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "bigsmall:block/ratwood_slab"
+    },
+    "type=double": {
+      "model": "bigsmall:block/ratwood_planks"
+    },
+    "type=top": {
+      "model": "bigsmall:block/ratwood_slab_top"
+    }
+  }
+}

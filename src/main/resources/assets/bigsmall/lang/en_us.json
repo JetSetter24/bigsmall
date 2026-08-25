@@ -1,6 +1,20 @@
 {
   "item.bigsmall.ratwood_twig": "Ratwood Twig",
 
-  "block.bigsmall.ratwood_planks": "Ratwood Planks"
+  "block.bigsmall.ratwood_planks": "Ratwood Planks",
+  "block.bigsmall.ratwood_stairs": "Ratwood Stairs",
+  "block.bigsmall.ratwood_slab": "Ratwood Slab",
+  "block.bigsmall.ratwood_button": "Ratwood Button",
+  "block.bigsmall.ratwood_pressure_plate": "Ratwood Pressure Plate",
+  "block.bigsmall.ratwood_fence": "Ratwood Fence",
+  "block.bigsmall.ratwood_fence_gate": "Ratwood Fence Gate",
+  "block.bigsmall.ratwood_door": "Ratwood Door",
+  "block.bigsmall.ratwood_trapdoor": "Ratwood Trapdoor"
+
+
+
+
+
+
 
 }

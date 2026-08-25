@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_ratwood_planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": "bigsmall:ratwood_planks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "bigsmall:ratwood_twig"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_ratwood_planks"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "bigsmall:ratwood_twig"
+    ]
+  }
+}

@@ -2,8 +2,7 @@ package net.jetlapori.bigsmall.block;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.jetlapori.bigsmall.BigAndSmall;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
+import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -17,12 +16,33 @@ public class ModBlocks {
     public static final Block RATWOOD_PLANKS = registerBlock("ratwood_planks",
             new Block(AbstractBlock.Settings.create().strength(2.0f, 3.0f).sounds(BlockSoundGroup.WOOD).burnable()));
 
+    public static final Block RATWOOD_STAIRS = registerBlock("ratwood_stairs",
+            new StairsBlock(ModBlocks.RATWOOD_PLANKS.getDefaultState(),
+                    AbstractBlock.Settings.create().strength(2.0f,3.0f).sounds(BlockSoundGroup.WOOD).burnable()));
+    public static final Block RATWOOD_SLAB = registerBlock("ratwood_slab",
+            new SlabBlock(
+                    AbstractBlock.Settings.create().strength(2.0f,3.0f).sounds(BlockSoundGroup.WOOD).burnable()));
 
+    public static final Block RATWOOD_BUTTON = registerBlock("ratwood_button",
+            new ButtonBlock(BlockSetType.OAK, 2,
+                    AbstractBlock.Settings.create().strength(2.0f,3.0f).noCollision().sounds(BlockSoundGroup.WOOD).burnable()));
+    public static final Block RATWOOD_PRESSURE_PLATE = registerBlock("ratwood_pressure_plate",
+            new PressurePlateBlock(BlockSetType.OAK,
+                    AbstractBlock.Settings.create().strength(2.0f,3.0f).noCollision().sounds(BlockSoundGroup.WOOD).burnable()));
 
+    public static final Block RATWOOD_FENCE = registerBlock("ratwood_fence",
+            new FenceBlock(
+                    AbstractBlock.Settings.create().strength(2.0f,3.0f).sounds(BlockSoundGroup.WOOD).burnable()));
+    public static final Block RATWOOD_FENCE_GATE = registerBlock("ratwood_fence_gate",
+            new FenceGateBlock(WoodType.OAK,
+                    AbstractBlock.Settings.create().strength(2.0f,3.0f).sounds(BlockSoundGroup.WOOD).burnable()));
 
-
-
-
+    public static final Block RATWOOD_DOOR = registerBlock("ratwood_door",
+            new DoorBlock(BlockSetType.OAK,
+                    AbstractBlock.Settings.create().strength(2.0f,3.0f).nonOpaque().sounds(BlockSoundGroup.WOOD).burnable()));
+    public static final Block RATWOOD_TRAPDOOR = registerBlock("ratwood_trapdoor",
+            new TrapdoorBlock(BlockSetType.OAK,
+                    AbstractBlock.Settings.create().strength(2.0f,3.0f).nonOpaque().sounds(BlockSoundGroup.WOOD).burnable()));
 
 
 
@@ -42,6 +62,14 @@ public class ModBlocks {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries-> {
             entries.add(ModBlocks.RATWOOD_PLANKS);
+            entries.add(ModBlocks.RATWOOD_STAIRS);
+            entries.add(ModBlocks.RATWOOD_SLAB);
+            entries.add(ModBlocks.RATWOOD_PRESSURE_PLATE);
+            entries.add(ModBlocks.RATWOOD_BUTTON);
+            entries.add(ModBlocks.RATWOOD_FENCE);
+            entries.add(ModBlocks.RATWOOD_FENCE_GATE);
+            entries.add(ModBlocks.RATWOOD_DOOR);
+            entries.add(ModBlocks.RATWOOD_TRAPDOOR);
         });
     }
 }

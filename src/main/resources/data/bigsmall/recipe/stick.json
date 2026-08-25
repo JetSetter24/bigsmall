@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "R": {
+      "item": "bigsmall:ratwood_twig"
+    }
+  },
+  "pattern": [
+    "R"
+  ],
+  "result": {
+    "count": 2,
+    "id": "minecraft:stick"
+  }
+}

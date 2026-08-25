@@ -2,6 +2,7 @@ package net.jetlapori.bigsmall.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.jetlapori.bigsmall.BigAndSmall;
+import net.minecraft.block.ComposterBlock;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
@@ -19,6 +20,8 @@ public class ModItems {
 
     public static void registerModItems() {
         BigAndSmall.LOGGER.info("Registering Mod Items for " + BigAndSmall.MOD_ID);
+
+        ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(RATWOOD_TWIG, 0.65F);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries-> {
             entries.add(RATWOOD_TWIG);

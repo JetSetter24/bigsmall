@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "bigsmall:ratwood_planks"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "bigsmall:ratwood_twig"
+  }
+}
