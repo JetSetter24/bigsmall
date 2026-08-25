@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "bigsmall:block/lipastone_slab"
+    },
+    "type=double": {
+      "model": "bigsmall:block/lipastone"
+    },
+    "type=top": {
+      "model": "bigsmall:block/lipastone_slab_top"
+    }
+  }
+}

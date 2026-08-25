@@ -24,7 +24,7 @@ public class ModBlocks {
                     AbstractBlock.Settings.create().strength(2.0f,3.0f).sounds(BlockSoundGroup.WOOD).burnable()));
 
     public static final Block RATWOOD_BUTTON = registerBlock("ratwood_button",
-            new ButtonBlock(BlockSetType.OAK, 2,
+            new ButtonBlock(BlockSetType.OAK, 30,
                     AbstractBlock.Settings.create().strength(2.0f,3.0f).noCollision().sounds(BlockSoundGroup.WOOD).burnable()));
     public static final Block RATWOOD_PRESSURE_PLATE = registerBlock("ratwood_pressure_plate",
             new PressurePlateBlock(BlockSetType.OAK,
@@ -44,6 +44,22 @@ public class ModBlocks {
             new TrapdoorBlock(BlockSetType.OAK,
                     AbstractBlock.Settings.create().strength(2.0f,3.0f).nonOpaque().sounds(BlockSoundGroup.WOOD).burnable()));
 
+    public static final Block LIPASTONE = registerBlock("lipastone",
+            new Block(AbstractBlock.Settings.create().strength(1.5f, 6.0f).requiresTool().sounds(BlockSoundGroup.STONE)));
+
+    public static final Block LIPASTONE_BUTTON = registerBlock("lipastone_button",
+            new ButtonBlock(BlockSetType.STONE, 20,
+                    AbstractBlock.Settings.create().strength(2.0f,3.0f).noCollision().requiresTool().sounds(BlockSoundGroup.STONE)));
+    public static final Block LIPASTONE_PRESSURE_PLATE = registerBlock("lipastone_pressure_plate",
+            new PressurePlateBlock(BlockSetType.STONE,
+                    AbstractBlock.Settings.create().strength(2.0f,3.0f).noCollision().requiresTool().sounds(BlockSoundGroup.STONE)));
+
+    public static final Block LIPASTONE_STAIRS = registerBlock("lipastone_stairs",
+            new StairsBlock(ModBlocks.LIPASTONE.getDefaultState(),
+                    AbstractBlock.Settings.create().strength(2.0f,3.0f).requiresTool().sounds(BlockSoundGroup.STONE)));
+    public static final Block LIPASTONE_SLAB = registerBlock("lipastone_slab",
+            new SlabBlock(
+                    AbstractBlock.Settings.create().strength(2.0f,3.0f).requiresTool().sounds(BlockSoundGroup.STONE)));
 
 
     private static Block registerBlock(String name, Block block) {
@@ -70,6 +86,16 @@ public class ModBlocks {
             entries.add(ModBlocks.RATWOOD_FENCE_GATE);
             entries.add(ModBlocks.RATWOOD_DOOR);
             entries.add(ModBlocks.RATWOOD_TRAPDOOR);
+
+            entries.add(ModBlocks.LIPASTONE);
+            entries.add(ModBlocks.LIPASTONE_STAIRS);
+            entries.add(ModBlocks.LIPASTONE_SLAB);
+            entries.add(ModBlocks.LIPASTONE_PRESSURE_PLATE);
+            entries.add(ModBlocks.LIPASTONE_BUTTON);
+        });
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries-> {
+            entries.add(ModBlocks.LIPASTONE);
         });
     }
 }

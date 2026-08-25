@@ -16,6 +16,7 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         BlockStateModelGenerator.BlockTexturePool ratwoodPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.RATWOOD_PLANKS);
+        BlockStateModelGenerator.BlockTexturePool lipastonePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.LIPASTONE);
 
         ratwoodPool.stairs(ModBlocks.RATWOOD_STAIRS);
         ratwoodPool.slab(ModBlocks.RATWOOD_SLAB);
@@ -26,6 +27,11 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerDoor(ModBlocks.RATWOOD_DOOR);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.RATWOOD_TRAPDOOR);
+
+        lipastonePool.stairs(ModBlocks.LIPASTONE_STAIRS);
+        lipastonePool.slab(ModBlocks.LIPASTONE_SLAB);
+        lipastonePool.button(ModBlocks.LIPASTONE_BUTTON);
+        lipastonePool.pressurePlate(ModBlocks.LIPASTONE_PRESSURE_PLATE);
     }
 
 

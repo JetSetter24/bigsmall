@@ -24,6 +24,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input(ModBlocks.RATWOOD_PLANKS). criterion(hasItem(ModBlocks.RATWOOD_PLANKS), conditionsFromItem(ModBlocks.RATWOOD_PLANKS))
                 .offerTo(exporter);
 
+
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.RATWOOD_PLANKS)
                 .pattern("RR")
                 .pattern("RR")
