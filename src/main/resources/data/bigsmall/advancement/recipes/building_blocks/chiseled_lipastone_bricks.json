@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_lipastone_brick_slab": {
+      "conditions": {
+        "items": [
+          {
+            "items": "bigsmall:lipastone_brick_slab"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "bigsmall:chiseled_lipastone_bricks"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_lipastone_brick_slab"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "bigsmall:chiseled_lipastone_bricks"
+    ]
+  }
+}

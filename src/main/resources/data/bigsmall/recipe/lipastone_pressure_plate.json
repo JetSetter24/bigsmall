@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "L": {
+      "item": "bigsmall:lipastone"
+    }
+  },
+  "pattern": [
+    "LL"
+  ],
+  "result": {
+    "count": 1,
+    "id": "bigsmall:lipastone_pressure_plate"
+  }
+}

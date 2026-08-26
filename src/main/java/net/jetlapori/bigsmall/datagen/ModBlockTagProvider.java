@@ -17,5 +17,16 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
         getOrCreateTagBuilder(BlockTags.WOODEN_FENCES).add(ModBlocks.RATWOOD_FENCE);
         getOrCreateTagBuilder(BlockTags.FENCE_GATES).add(ModBlocks.RATWOOD_FENCE_GATE);
+
+        getOrCreateTagBuilder(BlockTags.SLABS)
+                .add(ModBlocks.LIPASTONE_BRICK_SLAB);
+
+        getOrCreateTagBuilder(BlockTags.STAIRS)
+                .add(ModBlocks.LIPASTONE_BRICK_STAIRS);
+
+        getOrCreateTagBuilder(BlockTags.WALLS)
+                .add(ModBlocks.LIPASTONE_BRICK_WALL);
+
+
     }
 }

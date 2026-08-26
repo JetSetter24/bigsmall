@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_lipastone_bricks": {
+      "conditions": {
+        "items": [
+          {
+            "items": "bigsmall:lipastone_bricks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "bigsmall:lipastone_brick_wall"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_lipastone_bricks"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "bigsmall:lipastone_brick_wall"
+    ]
+  }
+}

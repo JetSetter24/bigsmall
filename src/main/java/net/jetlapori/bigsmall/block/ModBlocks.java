@@ -44,22 +44,53 @@ public class ModBlocks {
             new TrapdoorBlock(BlockSetType.OAK,
                     AbstractBlock.Settings.create().strength(2.0f,3.0f).nonOpaque().sounds(BlockSoundGroup.WOOD).burnable()));
 
+
     public static final Block LIPASTONE = registerBlock("lipastone",
             new Block(AbstractBlock.Settings.create().strength(1.5f, 6.0f).requiresTool().sounds(BlockSoundGroup.STONE)));
 
+    public static final Block SMOOTH_LIPASTONE = registerBlock("smooth_lipastone",
+            new Block(AbstractBlock.Settings.create().strength(1.5f, 6.0f).requiresTool().sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CHISELED_LIPASTONE_BRICKS = registerBlock("chiseled_lipastone_bricks",
+            new Block(AbstractBlock.Settings.create().strength(1.5f, 6.0f).requiresTool().sounds(BlockSoundGroup.STONE)));
+
+
     public static final Block LIPASTONE_BUTTON = registerBlock("lipastone_button",
             new ButtonBlock(BlockSetType.STONE, 20,
-                    AbstractBlock.Settings.create().strength(2.0f,3.0f).noCollision().requiresTool().sounds(BlockSoundGroup.STONE)));
+                    AbstractBlock.Settings.create().strength(1.5f,6.0f).noCollision().requiresTool().sounds(BlockSoundGroup.STONE)));
     public static final Block LIPASTONE_PRESSURE_PLATE = registerBlock("lipastone_pressure_plate",
             new PressurePlateBlock(BlockSetType.STONE,
-                    AbstractBlock.Settings.create().strength(2.0f,3.0f).noCollision().requiresTool().sounds(BlockSoundGroup.STONE)));
+                    AbstractBlock.Settings.create().strength(1.5f,6.0f).noCollision().requiresTool().sounds(BlockSoundGroup.STONE)));
 
     public static final Block LIPASTONE_STAIRS = registerBlock("lipastone_stairs",
             new StairsBlock(ModBlocks.LIPASTONE.getDefaultState(),
-                    AbstractBlock.Settings.create().strength(2.0f,3.0f).requiresTool().sounds(BlockSoundGroup.STONE)));
+                    AbstractBlock.Settings.create().strength(1.5f,6.0f).requiresTool().sounds(BlockSoundGroup.STONE)));
     public static final Block LIPASTONE_SLAB = registerBlock("lipastone_slab",
             new SlabBlock(
-                    AbstractBlock.Settings.create().strength(2.0f,3.0f).requiresTool().sounds(BlockSoundGroup.STONE)));
+                    AbstractBlock.Settings.create().strength(1.5f,6.0f).requiresTool().sounds(BlockSoundGroup.STONE)));
+
+    public static final Block LIPASTONE_BRICKS = registerBlock(
+            "lipastone_bricks",
+            new Block(AbstractBlock.Settings.copy(Blocks.BRICKS))
+    );
+
+    public static final Block LIPASTONE_BRICK_SLAB = registerBlock(
+            "lipastone_brick_slab",
+            new SlabBlock(AbstractBlock.Settings.copy(Blocks.BRICKS))
+    );
+
+    public static final Block LIPASTONE_BRICK_STAIRS = registerBlock(
+            "lipastone_brick_stairs",
+            new StairsBlock(
+                    LIPASTONE_BRICKS.getDefaultState(),
+                    AbstractBlock.Settings.copy(Blocks.BRICKS)
+            )
+    );
+
+    public static final Block LIPASTONE_BRICK_WALL = registerBlock(
+            "lipastone_brick_wall",
+            new WallBlock(AbstractBlock.Settings.copy(Blocks.BRICKS))
+    );
 
 
     private static Block registerBlock(String name, Block block) {
@@ -92,6 +123,13 @@ public class ModBlocks {
             entries.add(ModBlocks.LIPASTONE_SLAB);
             entries.add(ModBlocks.LIPASTONE_PRESSURE_PLATE);
             entries.add(ModBlocks.LIPASTONE_BUTTON);
+            entries.add(SMOOTH_LIPASTONE);
+            entries.add(LIPASTONE_BRICKS);
+            entries.add(LIPASTONE_BRICK_SLAB);
+            entries.add(LIPASTONE_BRICK_STAIRS);
+            entries.add(LIPASTONE_BRICK_WALL);
+            entries.add(CHISELED_LIPASTONE_BRICKS);
+
         });
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries-> {

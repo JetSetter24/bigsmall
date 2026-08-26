@@ -11,7 +11,14 @@
   "block.bigsmall.ratwood_door": "Ratwood Door",
   "block.bigsmall.ratwood_trapdoor": "Ratwood Trapdoor",
 
+  "block.bigsmall.lipastone_bricks": "Lipastone Bricks",
+  "block.bigsmall.lipastone_brick_stairs": "Lipastone Brick Stairs",
+  "block.bigsmall.lipastone_brick_slab": "Lipastone Brick Slab",
+  "block.bigsmall.lipastone_brick_wall": "Lipastone Brick Button",
+  "block.bigsmall.chiseled_lipastone_bricks": "Chiseled Lipastone Bricks",
+
   "block.bigsmall.lipastone": "Lipastone",
+  "block.bigsmall.smooth_lipastone": "Smooth Lipastone",
   "block.bigsmall.lipastone_stairs": "Lipastone Stairs",
   "block.bigsmall.lipastone_slab": "Lipastone Slab",
   "block.bigsmall.lipastone_button": "Lipastone Button",

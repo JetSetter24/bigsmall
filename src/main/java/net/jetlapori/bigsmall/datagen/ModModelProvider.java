@@ -32,6 +32,17 @@ public class ModModelProvider extends FabricModelProvider {
         lipastonePool.slab(ModBlocks.LIPASTONE_SLAB);
         lipastonePool.button(ModBlocks.LIPASTONE_BUTTON);
         lipastonePool.pressurePlate(ModBlocks.LIPASTONE_PRESSURE_PLATE);
+
+        BlockStateModelGenerator.BlockTexturePool lipastoneBricksPool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.LIPASTONE_BRICKS);
+
+        lipastoneBricksPool.stairs(ModBlocks.LIPASTONE_BRICK_STAIRS);
+        lipastoneBricksPool.slab(ModBlocks.LIPASTONE_BRICK_SLAB);
+        lipastoneBricksPool.wall(ModBlocks.LIPASTONE_BRICK_WALL);
+
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CHISELED_LIPASTONE_BRICKS);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SMOOTH_LIPASTONE);
+
     }
 
 

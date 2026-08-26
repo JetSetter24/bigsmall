@@ -1,6 +1,16 @@
 {
   "replace": false,
   "values": [
-    "bigsmall:lipastone"
+    "bigsmall:lipastone",
+    "bigsmall:lipastone_slab",
+    "bigsmall:lipastone_stairs",
+    "bigsmall:lipastone_button",
+    "bigsmall:lipastone_pressure_plate",
+    "bigsmall:lipastone_bricks",
+    "bigsmall:lipastone_brick_slab",
+    "bigsmall:lipastone_brick_stairs",
+    "bigsmall:lipastone_brick_wall",
+    "bigsmall:smooth_lipastone",
+    "bigsmall:chiseled_lipastone_bricks"
   ]
 }

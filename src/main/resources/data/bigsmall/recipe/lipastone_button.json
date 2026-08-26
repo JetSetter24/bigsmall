@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "ingredients": [
+    {
+      "item": "bigsmall:lipastone"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "bigsmall:lipastone_button"
+  }
+}

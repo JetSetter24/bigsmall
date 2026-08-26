@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "L": {
+      "item": "bigsmall:lipastone_brick_slab"
+    }
+  },
+  "pattern": [
+    "L",
+    "L"
+  ],
+  "result": {
+    "count": 1,
+    "id": "bigsmall:chiseled_lipastone_bricks"
+  }
+}

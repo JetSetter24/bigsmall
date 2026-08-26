@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "bigsmall:block/chiseled_lipastone_bricks"
+  }
+}

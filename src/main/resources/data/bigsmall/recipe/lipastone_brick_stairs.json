@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "L": {
+      "item": "bigsmall:lipastone_bricks"
+    }
+  },
+  "pattern": [
+    "L  ",
+    "LL ",
+    "LLL"
+  ],
+  "result": {
+    "count": 4,
+    "id": "bigsmall:lipastone_brick_stairs"
+  }
+}
