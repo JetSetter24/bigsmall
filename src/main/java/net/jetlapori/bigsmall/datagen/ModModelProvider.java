@@ -51,5 +51,6 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.RATWOOD_TWIG, Models.GENERATED);
         itemModelGenerator.register(ModItems.SKILISAB_SCALE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RATWOOD_BOAT, Models.GENERATED);
     }
 }

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "transportation",
+  "key": {
+    "R": {
+      "item": "bigsmall:ratwood_planks"
+    }
+  },
+  "pattern": [
+    "R R",
+    "RRR"
+  ],
+  "result": {
+    "count": 1,
+    "id": "bigsmall:ratwood_boat"
+  }
+}

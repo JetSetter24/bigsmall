@@ -3,6 +3,7 @@ package net.jetlapori.bigsmall;
 import net.fabricmc.api.ModInitializer;
 
 import net.jetlapori.bigsmall.block.ModBlocks;
+import net.jetlapori.bigsmall.entity.ModEntities;
 import net.jetlapori.bigsmall.item.ModItems;
 import net.minecraft.util.Identifier;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
@@ -29,6 +30,10 @@ public class BigAndSmall implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+        ModItems.registerModItems();
+        ModBlocks.registerModBlocks();
+        ModEntities.registerModEntities();
+
         ModItems.registerModItems();
         ModBlocks.registerModBlocks();
         BiomeModifications.addFeature(

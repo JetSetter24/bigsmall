@@ -15,6 +15,11 @@ public class ModItems {
 
     public static final Item SKILISAB_SCALE = registerItem("skilisab_scale", new Item(new Item.Settings().maxCount(16)));
 
+    public static final Item RATWOOD_BOAT = registerItem(
+            "ratwood_boat",
+            new RatwoodBoatItem(new Item.Settings())
+    );
+
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(BigAndSmall.MOD_ID, name), item);
