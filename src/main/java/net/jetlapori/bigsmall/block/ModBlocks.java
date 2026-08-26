@@ -3,6 +3,7 @@ package net.jetlapori.bigsmall.block;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.jetlapori.bigsmall.BigAndSmall;
 import net.minecraft.block.*;
+import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -92,6 +93,10 @@ public class ModBlocks {
             new WallBlock(AbstractBlock.Settings.copy(Blocks.BRICKS))
     );
 
+    public static final Block SKILISAB_SCALE_BLOCK = registerBlock("skilisab_scale_block",
+            new Block(AbstractBlock.Settings.create().strength(5.0f, 6.0f).sounds(BlockSoundGroup.BONE).requiresTool().instrument(NoteBlockInstrument.HAT)));
+
+
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
@@ -130,6 +135,7 @@ public class ModBlocks {
             entries.add(LIPASTONE_BRICK_WALL);
             entries.add(CHISELED_LIPASTONE_BRICKS);
 
+            entries.add(ModBlocks.SKILISAB_SCALE_BLOCK);
         });
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries-> {

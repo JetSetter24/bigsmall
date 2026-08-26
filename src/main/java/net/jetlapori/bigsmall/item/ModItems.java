@@ -13,6 +13,8 @@ public class ModItems {
 
     public static final Item RATWOOD_TWIG = registerItem("ratwood_twig", new Item(new Item.Settings()));
 
+    public static final Item SKILISAB_SCALE = registerItem("skilisab_scale", new Item(new Item.Settings().maxCount(16)));
+
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(BigAndSmall.MOD_ID, name), item);
@@ -25,6 +27,7 @@ public class ModItems {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries-> {
             entries.add(RATWOOD_TWIG);
+            entries.add(SKILISAB_SCALE);
         });
     }
 

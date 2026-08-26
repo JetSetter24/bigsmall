@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "bigsmall:skilisab_scale_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "bigsmall:skilisab_scale"
+  }
+}

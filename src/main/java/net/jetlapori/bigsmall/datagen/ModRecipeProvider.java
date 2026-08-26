@@ -26,6 +26,20 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input(ModBlocks.RATWOOD_PLANKS). criterion(hasItem(ModBlocks.RATWOOD_PLANKS), conditionsFromItem(ModBlocks.RATWOOD_PLANKS))
                 .offerTo(exporter);
 
+        // SKILISAB SCALES FROM BLOCK
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.SKILISAB_SCALE, 9)
+                .input(ModBlocks.SKILISAB_SCALE_BLOCK). criterion(hasItem(ModBlocks.SKILISAB_SCALE_BLOCK), conditionsFromItem(ModBlocks.SKILISAB_SCALE_BLOCK))
+                .offerTo(exporter);
+
+        // SKILISAB SCALE BLOCK
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.SKILISAB_SCALE_BLOCK)
+                .pattern("RRR")
+                .pattern("RRR")
+                .pattern("RRR")
+                .input('R', ModItems.SKILISAB_SCALE)
+                .criterion(hasItem(ModItems.SKILISAB_SCALE), conditionsFromItem(ModItems.SKILISAB_SCALE))
+                .offerTo(exporter);
+
 
         // RATWOOD PLANKS
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.RATWOOD_PLANKS)

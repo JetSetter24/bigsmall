@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_skilisab_scale": {
+      "conditions": {
+        "items": [
+          {
+            "items": "bigsmall:skilisab_scale"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "bigsmall:skilisab_scale_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_skilisab_scale"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "bigsmall:skilisab_scale_block"
+    ]
+  }
+}

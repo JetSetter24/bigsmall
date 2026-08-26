@@ -37,6 +37,8 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
         addDrop(ModBlocks.SMOOTH_LIPASTONE);
         addDrop(ModBlocks.CHISELED_LIPASTONE_BRICKS);
+
+        addDrop(ModBlocks.SKILISAB_SCALE_BLOCK);
     }
 
 

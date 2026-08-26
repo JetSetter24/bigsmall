@@ -42,6 +42,7 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CHISELED_LIPASTONE_BRICKS);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SMOOTH_LIPASTONE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SKILISAB_SCALE_BLOCK);
 
     }
 
@@ -49,5 +50,6 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.RATWOOD_TWIG, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SKILISAB_SCALE, Models.GENERATED);
     }
 }
