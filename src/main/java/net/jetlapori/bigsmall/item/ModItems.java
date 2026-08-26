@@ -20,6 +20,8 @@ public class ModItems {
             new RatwoodBoatItem(new Item.Settings())
     );
 
+    public static final Item SEALING_STONE = registerItem("sealing_stone", new Item(new Item.Settings()));
+
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(BigAndSmall.MOD_ID, name), item);
@@ -33,6 +35,7 @@ public class ModItems {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries-> {
             entries.add(RATWOOD_TWIG);
             entries.add(SKILISAB_SCALE);
+            entries.add(SEALING_STONE);
         });
     }
 
