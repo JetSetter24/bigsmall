@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "bigsmall:block/refined_spirit_jade_block"
+  }
+}

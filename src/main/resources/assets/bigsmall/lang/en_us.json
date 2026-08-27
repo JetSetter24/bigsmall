@@ -4,7 +4,15 @@
   "item.bigsmall.ratwood_boat": "Ratwood Boat",
   "item.bigsmall.sealing_stone": "Sealing Stone",
 
+  "item.bigsmall.raw_spirit_jade": "Raw Spirit Jade",
+  "item.bigsmall.refined_spirit_jade": "Refined Spirit jade",
+  "item.bigsmall.spirit_jade_beads": "Spirit Jade Beads",
+
   "block.bigsmall.skilisab_scale_block": "Skilisab Scale Block",
+
+  "block.bigsmall.raw_spirit_jade_block": "Block of Raw Spirit Jade",
+  "block.bigsmall.refined_spirit_jade_block": "Refined Spirit Jade Block",
+  "block.bigsmall.spirit_jade_ore": "Spirit Jade Ore",
 
   "block.bigsmall.ratwood_planks": "Ratwood Planks",
   "block.bigsmall.ratwood_stairs": "Ratwood Stairs",

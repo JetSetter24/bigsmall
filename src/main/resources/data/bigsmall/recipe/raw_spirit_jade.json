@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "bigsmall:raw_spirit_jade_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "bigsmall:raw_spirit_jade"
+  }
+}

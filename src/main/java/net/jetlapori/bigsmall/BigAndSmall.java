@@ -22,6 +22,12 @@ public class BigAndSmall implements ModInitializer {
 	public static final String MOD_ID = "bigsmall";
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
+    public static final RegistryKey<PlacedFeature> SPIRIT_JADE_ORE_PLACED =
+            RegistryKey.of(
+                    RegistryKeys.PLACED_FEATURE,
+                    Identifier.of(MOD_ID, "spirit_jade_ore")
+            );
+
     public static final RegistryKey<PlacedFeature> LIPASTONE_PLACED =
             RegistryKey.of(
                     RegistryKeys.PLACED_FEATURE,
@@ -33,6 +39,12 @@ public class BigAndSmall implements ModInitializer {
         ModItems.registerModItems();
         ModBlocks.registerModBlocks();
         ModEntities.registerModEntities();
+
+        BiomeModifications.addFeature(
+                BiomeSelectors.foundInOverworld(),
+                GenerationStep.Feature.UNDERGROUND_ORES,
+                SPIRIT_JADE_ORE_PLACED
+        );
 
         ModItems.registerModItems();
         ModBlocks.registerModBlocks();

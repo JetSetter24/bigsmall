@@ -12,6 +12,9 @@
     "bigsmall:lipastone_brick_wall",
     "bigsmall:smooth_lipastone",
     "bigsmall:chiseled_lipastone_bricks",
-    "bigsmall:skilisab_scale_block"
+    "bigsmall:skilisab_scale_block",
+    "bigsmall:spirit_jade_ore",
+    "bigsmall:raw_spirit_jade_block",
+    "bigsmall:refined_spirit_jade_block"
   ]
 }

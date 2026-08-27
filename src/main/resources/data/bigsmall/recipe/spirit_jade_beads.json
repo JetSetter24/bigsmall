@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " S ",
+    "B B",
+    "BBB"
+  ],
+  "key": {
+    "B": {
+      "item": "bigsmall:refined_spirit_jade_block"
+    },
+    "S": {
+      "item": "minecraft:string"
+    }
+  },
+  "result": {
+    "count": 1,
+    "id": "bigsmall:spirit_jade_beads"
+  }
+}

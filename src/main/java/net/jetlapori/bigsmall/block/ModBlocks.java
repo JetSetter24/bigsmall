@@ -88,6 +88,23 @@ public class ModBlocks {
             )
     );
 
+    public static final Block SPIRIT_JADE_ORE = registerBlock("spirit_jade_ore",
+            new Block(AbstractBlock.Settings.create()
+                    .strength(3.0f, 3.0f)
+                    .requiresTool()
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block RAW_SPIRIT_JADE_BLOCK = registerBlock(
+            "raw_spirit_jade_block",
+            new Block(AbstractBlock.Settings.copy(Blocks.RAW_IRON_BLOCK))
+    );
+
+    public static final Block REFINED_SPIRIT_JADE_BLOCK = registerBlock(
+            "refined_spirit_jade_block",
+            new Block(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK))
+    );
+
+
     public static final Block LIPASTONE_BRICK_WALL = registerBlock(
             "lipastone_brick_wall",
             new WallBlock(AbstractBlock.Settings.copy(Blocks.BRICKS))
@@ -136,10 +153,15 @@ public class ModBlocks {
             entries.add(CHISELED_LIPASTONE_BRICKS);
 
             entries.add(ModBlocks.SKILISAB_SCALE_BLOCK);
+
+            entries.add(ModBlocks.RAW_SPIRIT_JADE_BLOCK);
+            entries.add(ModBlocks.REFINED_SPIRIT_JADE_BLOCK);
         });
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries-> {
             entries.add(ModBlocks.LIPASTONE);
+            entries.add(ModBlocks.SPIRIT_JADE_ORE);
+            entries.add(ModBlocks.RAW_SPIRIT_JADE_BLOCK);
         });
     }
 }

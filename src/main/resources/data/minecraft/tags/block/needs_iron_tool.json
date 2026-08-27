@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "bigsmall:spirit_jade_ore",
+    "bigsmall:raw_spirit_jade_block",
+    "bigsmall:refined_spirit_jade_block"
+  ]
+}

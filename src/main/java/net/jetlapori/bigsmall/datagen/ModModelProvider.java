@@ -44,6 +44,10 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SMOOTH_LIPASTONE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SKILISAB_SCALE_BLOCK);
 
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SPIRIT_JADE_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_SPIRIT_JADE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.REFINED_SPIRIT_JADE_BLOCK);
+
     }
 
 
@@ -52,5 +56,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.RATWOOD_TWIG, Models.GENERATED);
         itemModelGenerator.register(ModItems.SKILISAB_SCALE, Models.GENERATED);
         itemModelGenerator.register(ModItems.RATWOOD_BOAT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RAW_SPIRIT_JADE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.REFINED_SPIRIT_JADE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SPIRIT_JADE_BEADS, Models.GENERATED);
     }
 }

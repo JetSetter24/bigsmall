@@ -21,6 +21,9 @@ public class ModItems {
 
     public static final Item SKILISAB_SCALE = registerItem("skilisab_scale", new Item(new Item.Settings().maxCount(16)));
 
+    public static final Item RAW_SPIRIT_JADE = registerItem("raw_spirit_jade", new Item(new Item.Settings()));
+    public static final Item REFINED_SPIRIT_JADE = registerItem("refined_spirit_jade", new Item(new Item.Settings()));
+    public static final Item SPIRIT_JADE_BEADS = registerItem("spirit_jade_beads", new Item(new Item.Settings().maxCount(1)));
 
 
     private static Item registerItem(String name, Item item) {
@@ -35,11 +38,14 @@ public class ModItems {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries-> {
             entries.add(RATWOOD_TWIG);
             entries.add(SKILISAB_SCALE);
-            entries.add(SEALING_STONE);
+            entries.add(RAW_SPIRIT_JADE);
+            entries.add(REFINED_SPIRIT_JADE);
         });
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(entries-> {
             entries.add(RATWOOD_BOAT);
+            entries.add(SEALING_STONE);
+            entries.add(SPIRIT_JADE_BEADS);
         });
     }
 
