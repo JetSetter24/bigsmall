@@ -15,6 +15,11 @@
     "bigsmall:skilisab_scale_block",
     "bigsmall:spirit_jade_ore",
     "bigsmall:raw_spirit_jade_block",
-    "bigsmall:refined_spirit_jade_block"
+    "bigsmall:refined_spirit_jade_block",
+    "bigsmall:rustic_chalk",
+    "bigsmall:rustic_chalk_slab",
+    "bigsmall:rustic_chalk_stairs",
+    "bigsmall:rustic_chalk_button",
+    "bigsmall:rustic_chalk_pressure_plate"
   ]
 }

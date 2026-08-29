@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "bigsmall:block/rustic_chalk",
+    "side": "bigsmall:block/rustic_chalk",
+    "top": "bigsmall:block/rustic_chalk"
+  }
+}

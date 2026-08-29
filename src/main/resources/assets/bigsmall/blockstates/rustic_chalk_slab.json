@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "bigsmall:block/rustic_chalk_slab"
+    },
+    "type=double": {
+      "model": "bigsmall:block/rustic_chalk"
+    },
+    "type=top": {
+      "model": "bigsmall:block/rustic_chalk_slab_top"
+    }
+  }
+}

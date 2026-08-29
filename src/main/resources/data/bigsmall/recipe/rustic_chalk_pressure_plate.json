@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "L": {
+      "item": "bigsmall:rustic_chalk"
+    }
+  },
+  "pattern": [
+    "LL"
+  ],
+  "result": {
+    "count": 1,
+    "id": "bigsmall:rustic_chalk_pressure_plate"
+  }
+}

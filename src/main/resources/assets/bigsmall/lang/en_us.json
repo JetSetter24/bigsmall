@@ -35,5 +35,11 @@
   "block.bigsmall.lipastone_stairs": "Lipastone Stairs",
   "block.bigsmall.lipastone_slab": "Lipastone Slab",
   "block.bigsmall.lipastone_button": "Lipastone Button",
-  "block.bigsmall.lipastone_pressure_plate": "Lipastone Pressure Plate"
+  "block.bigsmall.lipastone_pressure_plate": "Lipastone Pressure Plate",
+
+  "block.bigsmall.rustic_chalk": "Rustic Chalk",
+  "block.bigsmall.rustic_chalk_stairs": "Rustic Chalk Stairs",
+  "block.bigsmall.rustic_chalk_slab": "Rustic Chalk Slab",
+  "block.bigsmall.rustic_chalk_button": "Rustic Chalk Button",
+  "block.bigsmall.rustic_chalk_pressure_plate": "Rustic Chalk Pressure Plate"
 }

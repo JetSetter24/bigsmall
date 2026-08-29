@@ -17,6 +17,7 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         BlockStateModelGenerator.BlockTexturePool ratwoodPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.RATWOOD_PLANKS);
         BlockStateModelGenerator.BlockTexturePool lipastonePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.LIPASTONE);
+        BlockStateModelGenerator.BlockTexturePool rusticChalkPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.RUSTIC_CHALK);
 
         ratwoodPool.stairs(ModBlocks.RATWOOD_STAIRS);
         ratwoodPool.slab(ModBlocks.RATWOOD_SLAB);
@@ -32,6 +33,11 @@ public class ModModelProvider extends FabricModelProvider {
         lipastonePool.slab(ModBlocks.LIPASTONE_SLAB);
         lipastonePool.button(ModBlocks.LIPASTONE_BUTTON);
         lipastonePool.pressurePlate(ModBlocks.LIPASTONE_PRESSURE_PLATE);
+
+        rusticChalkPool.stairs(ModBlocks.RUSTIC_CHALK_STAIRS);
+        rusticChalkPool.slab(ModBlocks.RUSTIC_CHALK_SLAB);
+        rusticChalkPool.button(ModBlocks.RUSTIC_CHALK_BUTTON);
+        rusticChalkPool.pressurePlate(ModBlocks.RUSTIC_CHALK_PRESSURE_PLATE);
 
         BlockStateModelGenerator.BlockTexturePool lipastoneBricksPool =
                 blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.LIPASTONE_BRICKS);

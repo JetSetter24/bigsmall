@@ -88,6 +88,24 @@ public class ModBlocks {
             )
     );
 
+    public static final Block RUSTIC_CHALK = registerBlock("rustic_chalk",
+            new Block(AbstractBlock.Settings.create().strength(1.5f, 6.0f).requiresTool().sounds(BlockSoundGroup.STONE)));
+
+    public static final Block RUSTIC_CHALK_BUTTON = registerBlock("rustic_chalk_button",
+            new ButtonBlock(BlockSetType.STONE, 20,
+                    AbstractBlock.Settings.create().strength(1.5f,6.0f).noCollision().requiresTool().sounds(BlockSoundGroup.STONE)));
+    public static final Block RUSTIC_CHALK_PRESSURE_PLATE = registerBlock("rustic_chalk_pressure_plate",
+            new PressurePlateBlock(BlockSetType.STONE,
+                    AbstractBlock.Settings.create().strength(1.5f,6.0f).noCollision().requiresTool().sounds(BlockSoundGroup.STONE)));
+
+    public static final Block RUSTIC_CHALK_STAIRS = registerBlock("rustic_chalk_stairs",
+            new StairsBlock(ModBlocks.RUSTIC_CHALK.getDefaultState(),
+                    AbstractBlock.Settings.create().strength(1.5f,6.0f).requiresTool().sounds(BlockSoundGroup.STONE)));
+    public static final Block RUSTIC_CHALK_SLAB = registerBlock("rustic_chalk_slab",
+            new SlabBlock(
+                    AbstractBlock.Settings.create().strength(1.5f,6.0f).requiresTool().sounds(BlockSoundGroup.STONE)));
+
+
     public static final Block SPIRIT_JADE_ORE = registerBlock("spirit_jade_ore",
             new Block(AbstractBlock.Settings.create()
                     .strength(3.0f, 3.0f)
@@ -152,6 +170,12 @@ public class ModBlocks {
             entries.add(LIPASTONE_BRICK_WALL);
             entries.add(CHISELED_LIPASTONE_BRICKS);
 
+            entries.add(ModBlocks.RUSTIC_CHALK);
+            entries.add(ModBlocks.RUSTIC_CHALK_STAIRS);
+            entries.add(ModBlocks.RUSTIC_CHALK_SLAB);
+            entries.add(ModBlocks.RUSTIC_CHALK_PRESSURE_PLATE);
+            entries.add(ModBlocks.RUSTIC_CHALK_BUTTON);
+
             entries.add(ModBlocks.SKILISAB_SCALE_BLOCK);
 
             entries.add(ModBlocks.RAW_SPIRIT_JADE_BLOCK);
@@ -160,8 +184,18 @@ public class ModBlocks {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries-> {
             entries.add(ModBlocks.LIPASTONE);
+            entries.add(ModBlocks.RUSTIC_CHALK);
             entries.add(ModBlocks.SPIRIT_JADE_ORE);
             entries.add(ModBlocks.RAW_SPIRIT_JADE_BLOCK);
+        });
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.REDSTONE).register(entries -> {
+            entries.add(ModBlocks.RATWOOD_PRESSURE_PLATE);
+            entries.add(ModBlocks.RATWOOD_BUTTON);
+            entries.add(ModBlocks.LIPASTONE_PRESSURE_PLATE);
+            entries.add(ModBlocks.LIPASTONE_BUTTON);
+            entries.add(ModBlocks.RUSTIC_CHALK_PRESSURE_PLATE);
+            entries.add(ModBlocks.RUSTIC_CHALK_BUTTON);
         });
     }
 }

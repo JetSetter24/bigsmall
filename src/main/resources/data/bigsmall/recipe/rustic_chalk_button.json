@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "ingredients": [
+    {
+      "item": "bigsmall:rustic_chalk"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "bigsmall:rustic_chalk_button"
+  }
+}
