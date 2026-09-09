@@ -55,6 +55,10 @@ public class ModBlocks {
     public static final Block CHISELED_LIPASTONE_BRICKS = registerBlock("chiseled_lipastone_bricks",
             new Block(AbstractBlock.Settings.create().strength(1.5f, 6.0f).requiresTool().sounds(BlockSoundGroup.STONE)));
 
+    public static final Block CHISELED_JELLY_BRICKS = registerBlock("chiseled_jelly_bricks",
+            new Block(AbstractBlock.Settings.create().strength(1.5f, 6.0f).requiresTool().sounds(BlockSoundGroup.STONE)));
+
+
 
     public static final Block LIPASTONE_BUTTON = registerBlock("lipastone_button",
             new ButtonBlock(BlockSetType.STONE, 20,
@@ -169,6 +173,7 @@ public class ModBlocks {
             entries.add(LIPASTONE_BRICK_STAIRS);
             entries.add(LIPASTONE_BRICK_WALL);
             entries.add(CHISELED_LIPASTONE_BRICKS);
+            entries.add(CHISELED_JELLY_BRICKS);
 
             entries.add(ModBlocks.RUSTIC_CHALK);
             entries.add(ModBlocks.RUSTIC_CHALK_STAIRS);
