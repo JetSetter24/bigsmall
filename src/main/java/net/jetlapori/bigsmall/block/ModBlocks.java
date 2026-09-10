@@ -55,11 +55,6 @@ public class ModBlocks {
     public static final Block CHISELED_LIPASTONE_BRICKS = registerBlock("chiseled_lipastone_bricks",
             new Block(AbstractBlock.Settings.create().strength(1.5f, 6.0f).requiresTool().sounds(BlockSoundGroup.STONE)));
 
-    public static final Block CHISELED_JELLY_BRICKS = registerBlock("chiseled_jelly_bricks",
-            new Block(AbstractBlock.Settings.create().strength(1.5f, 6.0f).requiresTool().sounds(BlockSoundGroup.STONE)));
-
-
-
     public static final Block LIPASTONE_BUTTON = registerBlock("lipastone_button",
             new ButtonBlock(BlockSetType.STONE, 20,
                     AbstractBlock.Settings.create().strength(1.5f,6.0f).noCollision().requiresTool().sounds(BlockSoundGroup.STONE)));
@@ -132,6 +127,32 @@ public class ModBlocks {
             new WallBlock(AbstractBlock.Settings.copy(Blocks.BRICKS))
     );
 
+    public static final Block CHISELED_JELLY_BRICKS = registerBlock("chiseled_jelly_bricks",
+            new Block(AbstractBlock.Settings.create().strength(1.5f, 6.0f).requiresTool().sounds(BlockSoundGroup.STONE)));
+
+    public static final Block JELLY_BRICKS = registerBlock(
+            "jelly_bricks",
+            new Block(AbstractBlock.Settings.copy(Blocks.BRICKS))
+    );
+
+    public static final Block JELLY_BRICK_SLAB = registerBlock(
+            "jelly_brick_slab",
+            new SlabBlock(AbstractBlock.Settings.copy(Blocks.BRICKS))
+    );
+
+    public static final Block JELLY_BRICK_STAIRS = registerBlock(
+            "jelly_brick_stairs",
+            new StairsBlock(
+                    JELLY_BRICKS.getDefaultState(),
+                    AbstractBlock.Settings.copy(Blocks.BRICKS)
+            )
+    );
+
+    public static final Block JELLY_BRICK_WALL = registerBlock(
+            "jelly_brick_wall",
+            new WallBlock(AbstractBlock.Settings.copy(Blocks.BRICKS))
+    );
+
     public static final Block SKILISAB_SCALE_BLOCK = registerBlock("skilisab_scale_block",
             new Block(AbstractBlock.Settings.create().strength(5.0f, 6.0f).sounds(BlockSoundGroup.BONE).requiresTool().instrument(NoteBlockInstrument.HAT)));
 
@@ -173,6 +194,11 @@ public class ModBlocks {
             entries.add(LIPASTONE_BRICK_STAIRS);
             entries.add(LIPASTONE_BRICK_WALL);
             entries.add(CHISELED_LIPASTONE_BRICKS);
+            entries.add(SMOOTH_LIPASTONE);
+            entries.add(JELLY_BRICKS);
+            entries.add(JELLY_BRICK_SLAB);
+            entries.add(JELLY_BRICK_STAIRS);
+            entries.add(JELLY_BRICK_WALL);
             entries.add(CHISELED_JELLY_BRICKS);
 
             entries.add(ModBlocks.RUSTIC_CHALK);
