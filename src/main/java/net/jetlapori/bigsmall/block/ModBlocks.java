@@ -143,6 +143,10 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings.copy(Blocks.RAW_IRON_BLOCK))
     );
 
+    public static final Block CHISELED_RUSTIC_CHALK_BRICKS = registerBlock("chiseled_rustic_chalk_bricks",
+            new Block(AbstractBlock.Settings.create().strength(1.5f, 6.0f).requiresTool().sounds(BlockSoundGroup.STONE)));
+
+
     public static final Block REFINED_SPIRIT_JADE_BLOCK = registerBlock(
             "refined_spirit_jade_block",
             new Block(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK))
@@ -220,12 +224,13 @@ public class ModBlocks {
             entries.add(LIPASTONE_BRICK_SLAB);
             entries.add(LIPASTONE_BRICK_STAIRS);
             entries.add(LIPASTONE_BRICK_WALL);
+            entries.add(CHISELED_LIPASTONE_BRICKS);
+            entries.add(SMOOTH_LIPASTONE);
             entries.add(RUSTIC_CHALK_BRICKS);
             entries.add(RUSTIC_CHALK_BRICK_SLAB);
             entries.add(RUSTIC_CHALK_BRICK_STAIRS);
             entries.add(RUSTIC_CHALK_BRICK_WALL);
-            entries.add(CHISELED_LIPASTONE_BRICKS);
-            entries.add(SMOOTH_LIPASTONE);
+            entries.add(CHISELED_RUSTIC_CHALK_BRICKS);
             entries.add(JELLY_BRICKS);
             entries.add(JELLY_BRICK_SLAB);
             entries.add(JELLY_BRICK_STAIRS);
