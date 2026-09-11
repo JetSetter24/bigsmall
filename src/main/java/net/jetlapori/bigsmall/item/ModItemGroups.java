@@ -34,6 +34,7 @@ public class ModItemGroups {
                 entries.add(ModItems.SEALING_STONE);
                 entries.add(ModItems.IDOL);
 
+
                 entries.add(ModBlocks.LIPASTONE);
                 entries.add(ModBlocks.LIPASTONE_STAIRS);
                 entries.add(ModBlocks.LIPASTONE_SLAB);
