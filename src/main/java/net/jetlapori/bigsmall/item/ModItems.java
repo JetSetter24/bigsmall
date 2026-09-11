@@ -2,6 +2,7 @@ package net.jetlapori.bigsmall.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.jetlapori.bigsmall.BigAndSmall;
+import net.jetlapori.bigsmall.item.custom.IdolItem;
 import net.minecraft.block.ComposterBlock;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -30,6 +31,7 @@ public class ModItems {
     public static final Item REFINED_SPIRIT_JADE = registerItem("refined_spirit_jade", new Item(new Item.Settings()));
     public static final Item SPIRIT_JADE_BEADS = registerItem("spirit_jade_beads", new Item(new Item.Settings().maxCount(1)));
 
+    public static final Item IDOL = registerItem("idol", new IdolItem(new Item.Settings().maxDamage(1)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(BigAndSmall.MOD_ID, name), item);
@@ -53,6 +55,7 @@ public class ModItems {
             entries.add(SEALING_STONE);
             entries.add(SPIRIT_JADE_BEADS);
             entries.add(OCEANS_CROWN);
+            entries.add(IDOL);
         });
 
 
