@@ -4,6 +4,7 @@ import net.fabricmc.api.ModInitializer;
 
 import net.jetlapori.bigsmall.block.ModBlocks;
 import net.jetlapori.bigsmall.entity.ModEntities;
+import net.jetlapori.bigsmall.item.ModItemGroups;
 import net.jetlapori.bigsmall.item.ModItems;
 import net.minecraft.util.Identifier;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
@@ -40,6 +41,8 @@ public class BigAndSmall implements ModInitializer {
         ModItems.registerModItems();
         ModBlocks.registerModBlocks();
         ModEntities.registerModEntities();
+
+        ModItemGroups.registerItemGroups();
 
         BiomeModifications.addFeature(
                 BiomeSelectors.foundInOverworld(),

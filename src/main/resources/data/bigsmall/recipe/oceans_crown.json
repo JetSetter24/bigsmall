@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " B ",
+    "BOB",
+    "SBS"
+  ],
+  "key": {
+    "B": {
+      "item": "bigsmall:rustic_chalk"
+    },
+    "S": {
+      "item": "bigsmall:royal_pearl"
+    },
+    "O": {
+      "item": "minecraft:heart_of_the_sea"
+    }
+  },
+  "result": {
+    "count": 1,
+    "id": "bigsmall:oceans_crown"
+  }
+}

@@ -1,4 +1,6 @@
 {
+  "itemGroup.bigsmall.big_and_small": "Big & Small",
+
   "item.bigsmall.ratwood_twig": "Ratwood Twig",
   "item.bigsmall.skilisab_scale": "Skilisab Scale",
   "item.bigsmall.ratwood_boat": "Ratwood Boat",
@@ -6,6 +8,8 @@
 
   "item.bigsmall.royal_pearl": "Royal Pearl",
   "block.bigsmall.royal_pearl_block": "Block of Royal Pearl",
+  "item.bigsmall.oceans_crown": "Ocean's Crown",
+
 
   "item.bigsmall.raw_spirit_jade": "Raw Spirit Jade",
   "item.bigsmall.refined_spirit_jade": "Refined Spirit jade",

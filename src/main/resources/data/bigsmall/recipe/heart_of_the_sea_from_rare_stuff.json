@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "SBS",
+    "BOB",
+    "SBS"
+  ],
+  "key": {
+    "B": {
+      "item": "minecraft:prismarine_crystals"
+    },
+    "S": {
+      "item": "bigsmall:royal_pearl"
+    },
+    "O": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "result": {
+    "count": 1,
+    "id": "minecraft:heart_of_the_sea"
+  }
+}

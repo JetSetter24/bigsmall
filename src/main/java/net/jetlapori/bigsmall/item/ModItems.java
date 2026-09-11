@@ -15,6 +15,9 @@ public class ModItems {
             new RatwoodBoatItem(new Item.Settings())
     );
 
+    public static final Item OCEANS_CROWN = registerItem("oceans_crown", new Item(new Item.Settings().maxCount(1)));
+
+
     public static final Item SEALING_STONE = registerItem("sealing_stone", new Item(new Item.Settings()));
 
     public static final Item RATWOOD_TWIG = registerItem("ratwood_twig", new Item(new Item.Settings()));
@@ -49,7 +52,10 @@ public class ModItems {
             entries.add(RATWOOD_BOAT);
             entries.add(SEALING_STONE);
             entries.add(SPIRIT_JADE_BEADS);
+            entries.add(OCEANS_CROWN);
         });
+
+
     }
 
 }
