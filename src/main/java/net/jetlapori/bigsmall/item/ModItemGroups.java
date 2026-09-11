@@ -31,6 +31,7 @@ public class ModItemGroups {
                 entries.add(ModItems.REFINED_SPIRIT_JADE);
                 entries.add(ModBlocks.REFINED_SPIRIT_JADE_BLOCK);
                 entries.add(ModItems.SPIRIT_JADE_BEADS);
+                entries.add(ModItems.SEALING_STONE);
 
                 entries.add(ModBlocks.LIPASTONE);
                 entries.add(ModBlocks.LIPASTONE_STAIRS);
@@ -73,9 +74,8 @@ public class ModItemGroups {
                 entries.add(ModItems.SKILISAB_SCALE);
                 entries.add(ModBlocks.SKILISAB_SCALE_BLOCK);
 
-                entries.add(ModItems.SEALING_STONE);
 
-
+                entries.add(ModItems.IDOL);
             })
             .build();
 
