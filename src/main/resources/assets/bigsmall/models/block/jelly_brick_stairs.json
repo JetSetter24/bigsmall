@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "bigsmall:block/jelly_bricks",
+    "side": "bigsmall:block/jelly_bricks",
+    "top": "bigsmall:block/jelly_bricks"
+  }
+}
