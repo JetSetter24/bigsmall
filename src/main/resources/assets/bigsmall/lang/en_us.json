@@ -61,7 +61,6 @@
   "block.bigsmall.jelly_brick_wall": "Jelly Brick Button",
   "block.bigsmall.chiseled_jelly_bricks": "Chiseled Jelly Bricks",
   "block.bigsmall.jelly_button": "Jelly Bean Button",
-  "block.bigsmall.jelly_pressure_plate": "Jelly Bean Pressure Plate",
-
-  "item.bigsmall.idol": "Odd Idol"
+  "block.bigsmall.jelly_pressure_plate": "Jelly Bean Pressure Plate"
+  "block.bigsmall.chiseled_jelly_bricks": "Chiseled Jelly Bricks"
 }
