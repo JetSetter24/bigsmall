@@ -27,6 +27,15 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.WALLS)
                 .add(ModBlocks.LIPASTONE_BRICK_WALL);
 
+        getOrCreateTagBuilder(BlockTags.SLABS)
+                .add(ModBlocks.RUSTIC_CHALK_BRICK_SLAB);
+
+        getOrCreateTagBuilder(BlockTags.STAIRS)
+                .add(ModBlocks.RUSTIC_CHALK_BRICK_STAIRS);
+
+        getOrCreateTagBuilder(BlockTags.WALLS)
+                .add(ModBlocks.RUSTIC_CHALK_BRICK_WALL);
+
 
     }
 }

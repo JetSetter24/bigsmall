@@ -4,6 +4,9 @@
   "item.bigsmall.ratwood_boat": "Ratwood Boat",
   "item.bigsmall.sealing_stone": "Sealing Stone",
 
+  "item.bigsmall.royal_pearl": "Royal Pearl",
+  "block.bigsmall.royal_pearl_block": "Block of Royal Pearl",
+
   "item.bigsmall.raw_spirit_jade": "Raw Spirit Jade",
   "item.bigsmall.refined_spirit_jade": "Refined Spirit jade",
   "item.bigsmall.spirit_jade_beads": "Spirit Jade Beads",
@@ -27,8 +30,13 @@
   "block.bigsmall.lipastone_bricks": "Lipastone Bricks",
   "block.bigsmall.lipastone_brick_stairs": "Lipastone Brick Stairs",
   "block.bigsmall.lipastone_brick_slab": "Lipastone Brick Slab",
-  "block.bigsmall.lipastone_brick_wall": "Lipastone Brick Button",
+  "block.bigsmall.lipastone_brick_wall": "Lipastone Brick Wall",
   "block.bigsmall.chiseled_lipastone_bricks": "Chiseled Lipastone Bricks",
+
+  "block.bigsmall.rustic_chalk_bricks": "Rustic Chalk Bricks",
+  "block.bigsmall.rustic_chalk_brick_stairs": "Rustic Chalk Brick Stairs",
+  "block.bigsmall.rustic_chalk_brick_slab": "Rustic Chalk Brick Slab",
+  "block.bigsmall.rustic_chalk_brick_wall": "Rustic Chalk Brick Wall",
 
   "block.bigsmall.lipastone": "Lipastone",
   "block.bigsmall.smooth_lipastone": "Smooth Lipastone",

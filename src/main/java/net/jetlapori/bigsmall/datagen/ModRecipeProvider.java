@@ -173,5 +173,40 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModBlocks.RUSTIC_CHALK), conditionsFromItem(ModBlocks.RUSTIC_CHALK))
                 .offerTo(exporter);
 
+
+        // RUSTIC CHALK BRICKS
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RUSTIC_CHALK_BRICKS, 4)
+                .pattern("LL")
+                .pattern("LL")
+                .input('L', ModBlocks.RUSTIC_CHALK)
+                .criterion(hasItem(ModBlocks.RUSTIC_CHALK), conditionsFromItem(ModBlocks.RUSTIC_CHALK))
+                .offerTo(exporter);
+
+
+        // RUSTIC CHALK BRICK STAIRS
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RUSTIC_CHALK_BRICK_STAIRS, 4)
+                .pattern("L  ")
+                .pattern("LL ")
+                .pattern("LLL")
+                .input('L', ModBlocks.RUSTIC_CHALK_BRICKS)
+                .criterion(hasItem(ModBlocks.RUSTIC_CHALK_BRICKS), conditionsFromItem(ModBlocks.RUSTIC_CHALK_BRICKS))
+                .offerTo(exporter);
+
+
+        // RUSTIC CHALK BRICK SLAB
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RUSTIC_CHALK_BRICK_SLAB, 6)
+                .pattern("LLL")
+                .input('L', ModBlocks.RUSTIC_CHALK_BRICKS)
+                .criterion(hasItem(ModBlocks.RUSTIC_CHALK_BRICKS), conditionsFromItem(ModBlocks.RUSTIC_CHALK_BRICKS))
+                .offerTo(exporter);
+
+
+        // RUSTIC CHALK BRICK WALL
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RUSTIC_CHALK_BRICK_WALL, 6)
+                .pattern("LLL")
+                .pattern("LLL")
+                .input('L', ModBlocks.RUSTIC_CHALK_BRICKS)
+                .criterion(hasItem(ModBlocks.RUSTIC_CHALK_BRICKS), conditionsFromItem(ModBlocks.RUSTIC_CHALK_BRICKS))
+                .offerTo(exporter);
     }
 }

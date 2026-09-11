@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "L": {
+      "item": "bigsmall:rustic_chalk"
+    }
+  },
+  "pattern": [
+    "LL",
+    "LL"
+  ],
+  "result": {
+    "count": 4,
+    "id": "bigsmall:rustic_chalk_bricks"
+  }
+}

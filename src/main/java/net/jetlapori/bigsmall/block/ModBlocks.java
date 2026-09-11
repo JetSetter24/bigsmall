@@ -87,8 +87,35 @@ public class ModBlocks {
             )
     );
 
+    public static final Block RUSTIC_CHALK_BRICKS = registerBlock(
+            "rustic_chalk_bricks",
+            new Block(AbstractBlock.Settings.copy(Blocks.BRICKS))
+    );
+
+    public static final Block RUSTIC_CHALK_BRICK_SLAB = registerBlock(
+            "rustic_chalk_brick_slab",
+            new SlabBlock(AbstractBlock.Settings.copy(Blocks.BRICKS))
+    );
+
+    public static final Block RUSTIC_CHALK_BRICK_STAIRS = registerBlock(
+            "rustic_chalk_brick_stairs",
+            new StairsBlock(
+                    LIPASTONE_BRICKS.getDefaultState(),
+                    AbstractBlock.Settings.copy(Blocks.BRICKS)
+            )
+    );
+
     public static final Block RUSTIC_CHALK = registerBlock("rustic_chalk",
             new Block(AbstractBlock.Settings.create().strength(1.5f, 6.0f).requiresTool().sounds(BlockSoundGroup.STONE)));
+
+    public static final Block ROYAL_PEARL_BLOCK = registerBlock("royal_pearl_block",
+            new Block(AbstractBlock.Settings.create().strength(1.5f, 6.0f).requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+
+    public static final Block RUSTIC_CHALK_BRICK_WALL = registerBlock(
+            "rustic_chalk_brick_wall",
+            new WallBlock(AbstractBlock.Settings.copy(Blocks.BRICKS))
+    );
+
 
     public static final Block RUSTIC_CHALK_BUTTON = registerBlock("rustic_chalk_button",
             new ButtonBlock(BlockSetType.STONE, 20,
@@ -193,6 +220,10 @@ public class ModBlocks {
             entries.add(LIPASTONE_BRICK_SLAB);
             entries.add(LIPASTONE_BRICK_STAIRS);
             entries.add(LIPASTONE_BRICK_WALL);
+            entries.add(RUSTIC_CHALK_BRICKS);
+            entries.add(RUSTIC_CHALK_BRICK_SLAB);
+            entries.add(RUSTIC_CHALK_BRICK_STAIRS);
+            entries.add(RUSTIC_CHALK_BRICK_WALL);
             entries.add(CHISELED_LIPASTONE_BRICKS);
             entries.add(SMOOTH_LIPASTONE);
             entries.add(JELLY_BRICKS);
@@ -208,6 +239,8 @@ public class ModBlocks {
             entries.add(ModBlocks.RUSTIC_CHALK_BUTTON);
 
             entries.add(ModBlocks.SKILISAB_SCALE_BLOCK);
+
+            entries.add(ModBlocks.ROYAL_PEARL_BLOCK);
 
             entries.add(ModBlocks.RAW_SPIRIT_JADE_BLOCK);
             entries.add(ModBlocks.REFINED_SPIRIT_JADE_BLOCK);
