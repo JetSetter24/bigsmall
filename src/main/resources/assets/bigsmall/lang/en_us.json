@@ -55,5 +55,12 @@
   "block.bigsmall.rustic_chalk_button": "Rustic Chalk Button",
   "block.bigsmall.rustic_chalk_pressure_plate": "Rustic Chalk Pressure Plate",
 
+  "block.bigsmall.jelly_bricks": "Jelly Bricks",
+  "block.bigsmall.jelly_brick_stairs": "Jelly Brick Stairs",
+  "block.bigsmall.jelly_brick_slab": "Jelly Brick Slab",
+  "block.bigsmall.jelly_brick_wall": "Jelly Brick Button",
+  "block.bigsmall.chiseled_jelly_bricks": "Chiseled Jelly Bricks",
+  "block.bigsmall.jelly_button": "Jelly Bean Button",
+  "block.bigsmall.jelly_pressure_plate": "Jelly Bean Pressure Plate"
   "block.bigsmall.chiseled_jelly_bricks": "Chiseled Jelly Bricks"
 }
