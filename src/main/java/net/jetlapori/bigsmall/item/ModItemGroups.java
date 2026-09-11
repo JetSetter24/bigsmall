@@ -31,6 +31,8 @@ public class ModItemGroups {
                 entries.add(ModItems.REFINED_SPIRIT_JADE);
                 entries.add(ModBlocks.REFINED_SPIRIT_JADE_BLOCK);
                 entries.add(ModItems.SPIRIT_JADE_BEADS);
+                entries.add(ModItems.SEALING_STONE);
+                entries.add(ModItems.IDOL);
 
                 entries.add(ModBlocks.LIPASTONE);
                 entries.add(ModBlocks.LIPASTONE_STAIRS);
@@ -73,7 +75,11 @@ public class ModItemGroups {
                 entries.add(ModItems.SKILISAB_SCALE);
                 entries.add(ModBlocks.SKILISAB_SCALE_BLOCK);
 
-                entries.add(ModItems.SEALING_STONE);
+                entries.add(ModBlocks.JELLY_BRICKS);
+                entries.add(ModBlocks.JELLY_BRICK_STAIRS);
+                entries.add(ModBlocks.JELLY_BRICK_SLAB);
+                entries.add(ModBlocks.JELLY_BRICK_WALL);
+                entries.add(ModBlocks.CHISELED_JELLY_BRICKS);
 
 
             })
