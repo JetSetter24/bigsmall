@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "bigsmall:rustic_chalk_bricks"
+  },
+  "result": {
+    "id": "bigsmall:chiseled_rustic_chalk_bricks"
+  }
+}

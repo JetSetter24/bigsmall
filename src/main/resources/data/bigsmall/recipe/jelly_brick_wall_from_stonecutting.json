@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "bigsmall:jelly_bricks"
+  },
+  "result": {
+    "id": "bigsmall:jelly_brick_wall"
+  }
+}

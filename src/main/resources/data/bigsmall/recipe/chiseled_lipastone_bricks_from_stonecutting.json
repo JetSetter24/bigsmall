@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "bigsmall:lipastone_bricks"
+  },
+  "result": {
+    "id": "bigsmall:chiseled_lipastone_bricks"
+  }
+}
