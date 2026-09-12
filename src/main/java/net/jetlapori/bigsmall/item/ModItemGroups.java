@@ -58,6 +58,13 @@ public class ModItemGroups {
                 entries.add(ModBlocks.RUSTIC_CHALK_BRICK_WALL);
                 entries.add(ModBlocks.CHISELED_RUSTIC_CHALK_BRICKS);
 
+                entries.add(ModItems.JELLY_BRICK);
+                entries.add(ModBlocks.JELLY_BRICKS);
+                entries.add(ModBlocks.JELLY_BRICK_STAIRS);
+                entries.add(ModBlocks.JELLY_BRICK_SLAB);
+                entries.add(ModBlocks.JELLY_BRICK_WALL);
+                entries.add(ModBlocks.CHISELED_JELLY_BRICKS);
+
                 entries.add(ModItems.ROYAL_PEARL);
                 entries.add(ModBlocks.ROYAL_PEARL_BLOCK);
                 entries.add(ModItems.OCEANS_CROWN);
@@ -76,13 +83,6 @@ public class ModItemGroups {
 
                 entries.add(ModItems.SKILISAB_SCALE);
                 entries.add(ModBlocks.SKILISAB_SCALE_BLOCK);
-
-                entries.add(ModBlocks.JELLY_BRICKS);
-                entries.add(ModBlocks.JELLY_BRICK_STAIRS);
-                entries.add(ModBlocks.JELLY_BRICK_SLAB);
-                entries.add(ModBlocks.JELLY_BRICK_WALL);
-                entries.add(ModBlocks.CHISELED_JELLY_BRICKS);
-
 
             })
             .build();

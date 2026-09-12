@@ -26,6 +26,8 @@ public class ModItems {
 
     public static final Item SKILISAB_SCALE = registerItem("skilisab_scale", new Item(new Item.Settings().maxCount(16)));
 
+    public static final Item JELLY_BRICK = registerItem("ratwood_twig", new Item(new Item.Settings()));
+
     public static final Item RAW_SPIRIT_JADE = registerItem("raw_spirit_jade", new Item(new Item.Settings()));
     public static final Item REFINED_SPIRIT_JADE = registerItem("refined_spirit_jade", new Item(new Item.Settings()));
     public static final Item SPIRIT_JADE_BEADS = registerItem("spirit_jade_beads", new Item(new Item.Settings().maxCount(1)));
@@ -47,6 +49,7 @@ public class ModItems {
             entries.add(RAW_SPIRIT_JADE);
             entries.add(REFINED_SPIRIT_JADE);
             entries.add(ROYAL_PEARL);
+            entries.add(JELLY_BRICK);
         });
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(entries-> {
