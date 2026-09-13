@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:chiseled_stone_bricks"
+    },
+    {
+      "item": "bigsmall:refined_spirit_jade"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "bigsmall:sealing_stone"
+  }
+}
