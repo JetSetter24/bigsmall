@@ -17,7 +17,18 @@ import net.minecraft.world.gen.GenerationStep;
 import net.minecraft.world.gen.feature.PlacedFeature;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
+import net.fabricmc.fabric.api.event.player.UseEntityCallback;
+import net.jetlapori.bigsmall.item.ModItems;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.ItemEntity;
+import net.minecraft.entity.decoration.EndCrystalEntity;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
+import net.minecraft.particle.ParticleTypes;
+import net.minecraft.server.world.ServerWorld;
+import net.minecraft.sound.SoundCategory;
+import net.minecraft.sound.SoundEvents;
+import net.minecraft.util.ActionResult;
 
 
 public class BigAndSmall implements ModInitializer {
@@ -66,6 +77,93 @@ public class BigAndSmall implements ModInitializer {
                         Identifier.of(BigAndSmall.MOD_ID, "rustic_chalk")
                 )
         );
+
+
+
+        UseEntityCallback.EVENT.register((player, world, hand, entity, hitResult) -> {
+
+
+            if (!(entity instanceof EndCrystalEntity)) {
+                return ActionResult.PASS;
+            }
+
+
+            if (!player.getStackInHand(hand).isOf(ModItems.SEALING_STONE)) {
+                return ActionResult.PASS;
+            }
+
+
+            if (!world.isClient) {
+
+                ServerWorld serverWorld = (ServerWorld) world;
+
+                double x = entity.getX();
+                double y = entity.getY();
+                double z = entity.getZ();
+
+
+                serverWorld.spawnParticles(
+                        ParticleTypes.PORTAL,
+                        x,
+                        y,
+                        z,
+                        40,
+                        0.5,
+                        1.0,
+                        0.5,
+                        0.2
+                );
+
+                serverWorld.spawnParticles(
+                        ParticleTypes.END_ROD,
+                        x,
+                        y,
+                        z,
+                        15,
+                        0.4,
+                        0.8,
+                        0.4,
+                        0.05
+                );
+
+
+                world.playSound(
+                        null,
+                        x,
+                        y,
+                        z,
+                        SoundEvents.ENTITY_ALLAY_AMBIENT_WITHOUT_ITEM,
+                        SoundCategory.PLAYERS,
+                        4.0F,
+                        1.5F
+                );
+
+
+                ItemEntity droppedCrystal = new ItemEntity(
+                        world,
+                        x,
+                        y,
+                        z,
+                        new ItemStack(Items.END_CRYSTAL)
+                );
+
+
+                droppedCrystal.setVelocity(
+                        0.0,
+                        0.2,
+                        0.0
+                );
+
+                serverWorld.spawnEntity(droppedCrystal);
+
+
+                entity.discard();
+
+                player.getStackInHand(hand).decrement(1);
+            }
+
+            return ActionResult.SUCCESS;
+        });
 	}
 }
 
