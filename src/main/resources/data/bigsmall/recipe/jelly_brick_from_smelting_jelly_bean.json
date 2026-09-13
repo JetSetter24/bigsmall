@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "cookingtime": 100,
+  "experience": 0.1,
+  "group": "jelly_bean",
+  "ingredient": {
+    "item": "bigsmall:jelly_bean"
+  },
+  "result": {
+    "id": "bigsmall:jelly_brick"
+  }
+}

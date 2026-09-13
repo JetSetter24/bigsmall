@@ -58,6 +58,7 @@ public class ModItemGroups {
                 entries.add(ModBlocks.RUSTIC_CHALK_BRICK_WALL);
                 entries.add(ModBlocks.CHISELED_RUSTIC_CHALK_BRICKS);
 
+                entries.add(ModItems.JELLY_BEAN);
                 entries.add(ModItems.JELLY_BRICK);
                 entries.add(ModBlocks.JELLY_BRICKS);
                 entries.add(ModBlocks.JELLY_BRICK_STAIRS);

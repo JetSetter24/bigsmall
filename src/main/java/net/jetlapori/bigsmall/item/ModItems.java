@@ -27,6 +27,7 @@ public class ModItems {
     public static final Item SKILISAB_SCALE = registerItem("skilisab_scale", new Item(new Item.Settings().maxCount(16)));
 
     public static final Item JELLY_BRICK = registerItem("jelly_brick", new Item(new Item.Settings().food(ModFoodComponents.JELLY_BRICK)));
+    public static final Item JELLY_BEAN = registerItem("jelly_bean", new Item(new Item.Settings().food(ModFoodComponents.JELLY_BRICK)));
 
     public static final Item RAW_SPIRIT_JADE = registerItem("raw_spirit_jade", new Item(new Item.Settings()));
     public static final Item REFINED_SPIRIT_JADE = registerItem("refined_spirit_jade", new Item(new Item.Settings()));
@@ -49,6 +50,7 @@ public class ModItems {
             entries.add(RAW_SPIRIT_JADE);
             entries.add(REFINED_SPIRIT_JADE);
             entries.add(ROYAL_PEARL);
+            entries.add(JELLY_BEAN);
             entries.add(JELLY_BRICK);
         });
 
