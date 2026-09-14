@@ -105,6 +105,10 @@ public class ModBlocks {
             )
     );
 
+    public static final Block JELLY_BEAN_BUTTON = registerBlock("jelly_bean_button",
+            new ButtonBlock(BlockSetType.STONE, 20,
+                    AbstractBlock.Settings.create().strength(1.5f,6.0f).noCollision().requiresTool().sounds(BlockSoundGroup.STONE)));
+
     public static final Block RUSTIC_CHALK = registerBlock("rustic_chalk",
             new Block(AbstractBlock.Settings.create().strength(1.5f, 6.0f).requiresTool().sounds(BlockSoundGroup.STONE)));
 
@@ -234,6 +238,7 @@ public class ModBlocks {
             entries.add(JELLY_BRICKS);
             entries.add(JELLY_BRICK_SLAB);
             entries.add(JELLY_BRICK_STAIRS);
+            entries.add(ModBlocks.JELLY_BEAN_BUTTON);
             entries.add(JELLY_BRICK_WALL);
             entries.add(CHISELED_JELLY_BRICKS);
 

@@ -65,6 +65,7 @@ public class ModItemGroups {
                 entries.add(ModBlocks.JELLY_BRICK_SLAB);
                 entries.add(ModBlocks.JELLY_BRICK_WALL);
                 entries.add(ModBlocks.CHISELED_JELLY_BRICKS);
+                entries.add(ModBlocks.JELLY_BEAN_BUTTON);
 
                 entries.add(ModItems.ROYAL_PEARL);
                 entries.add(ModBlocks.ROYAL_PEARL_BLOCK);

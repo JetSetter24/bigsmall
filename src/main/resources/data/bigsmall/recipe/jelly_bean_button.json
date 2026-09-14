@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "ingredients": [
+    {
+      "item": "bigsmall:jelly_bean"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "bigsmall:jelly_bean_button"
+  }
+}
