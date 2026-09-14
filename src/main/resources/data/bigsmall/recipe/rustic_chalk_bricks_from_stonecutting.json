@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "bigsmall:rustic_chalk"
+  },
+  "result": {
+    "id": "bigsmall:rustic_chalk_bricks",
+    "count": 1
+  }
+}

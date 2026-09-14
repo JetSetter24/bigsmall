@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "foodstuffs",
+  "key": {
+    "L": {
+      "item": "minecraft:sugar"
+    },
+    "C": {
+      "item": "minecraft:cyan_dye"
+    }
+  },
+  "pattern": [
+    "LC ",
+    "LL "
+  ],
+  "result": {
+    "count": 6,
+    "id": "bigsmall:jelly_bean"
+  }
+}
